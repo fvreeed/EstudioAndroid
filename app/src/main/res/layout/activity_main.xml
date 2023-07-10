@@ -7,23 +7,24 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/activityButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Button"
+        android:onClick="launchFirstActivity"
+        android:text="TWO ACTIVITY"
         app:layout_constraintStart_toEndOf="@+id/calcButton"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
+        android:layout_width="65dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Button"
-        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintStart_toEndOf="@+id/activityButton"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button

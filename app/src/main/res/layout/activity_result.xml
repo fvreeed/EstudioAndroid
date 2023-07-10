@@ -181,5 +181,17 @@
             android:onClick="onOperationClick"/>
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="385dp"
+        android:layout_height="204dp"
+        android:layout_marginTop="50dp"
+        android:text="In this activity I create simple calculator. I create buttons with numbers, expressions and calculate user's input."
+        android:textColor="#272626"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forthButtonPanel" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,7 @@
 package com.example.falaq;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewTreeViewModelKt;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,5 +24,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void launchFirstActivity(View view) {
 
+        Intent intent = new Intent(this, FirstActivity.class);
+        startActivity(intent);
+    }
 }
