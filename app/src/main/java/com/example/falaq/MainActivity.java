@@ -17,41 +17,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void masFunction(View view) {
+    public void launchCalculator(View view) {
 
-        EditText editText = findViewById(R.id.latitudeInput);
-        EditText editText2 = findViewById(R.id.longitudeInput);
-        int latitude = Integer.parseInt(editText.getText().toString());
-        int longitude = Integer.parseInt(editText2.getText().toString());
-        int result = latitude + longitude;
-        String res = Integer.toString(result);
-        launchResult(res);
-        ((TextView)findViewById(R.id.textView3)).setText(Integer.toString(result));
-        Log.d("result", editText.getText().toString());
-        PrayTime prayTime = new PrayTime();
-        prayTime.setLat(latitude);
-        prayTime.setLng(longitude);
-
-        Log.d("queremos", Double.toString(prayTime.getJDate()));
-
+        Intent intent = new Intent(this, ResultActivity.class);
+        startActivity(intent);
     }
 
-    public void menosFunction(View view) {
 
-        EditText editText = findViewById(R.id.latitudeInput);
-        EditText editText2 = findViewById(R.id.longitudeInput);
-        int latitude = Integer.parseInt(editText.getText().toString());
-        int longitude = Integer.parseInt(editText2.getText().toString());
-        int result = latitude - longitude;
-        String res = Integer.toString(result);
-        launchResult(res);
-        ((TextView)findViewById(R.id.textView3)).setText(Integer.toString(result));
-    }
-
-    public void launchResult(String view) {
-
-        Intent i = new Intent(this, ResultActivity.class);
-        i.putExtra("result", view);
-        startActivity(i);
-    }
 }
