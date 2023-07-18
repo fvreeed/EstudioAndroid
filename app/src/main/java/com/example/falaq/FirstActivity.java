@@ -20,7 +20,7 @@ public class FirstActivity extends AppCompatActivity {
     public void copyAndCheck(View view) {
 
         String text = ((TextView)findViewById(R.id.textForCopy)).getText().toString();
-        text += "/n";
+        text += "\n";
         text += ((EditText)findViewById(R.id.usersTextForCopy)).getText().toString();
         Intent intent = new Intent(this, SecondActivity.class);
         intent.putExtra("copy", text);

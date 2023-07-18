@@ -13,7 +13,7 @@ public class SecondActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-        Intent intent =getIntent();
+        Intent intent = getIntent();
         String text = intent.getStringExtra("copy");
         ((TextView)findViewById(R.id.copyText)).setText(text);
     }

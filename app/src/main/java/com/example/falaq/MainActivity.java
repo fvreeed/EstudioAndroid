@@ -29,4 +29,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, FirstActivity.class);
         startActivity(intent);
     }
+
+    public void  launchDatabase(View view) {
+
+        Intent intent = new Intent(MainActivity.this, DatabaseActivity.class);
+        startActivity(intent);
+    }
 }

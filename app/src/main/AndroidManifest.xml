@@ -13,22 +13,48 @@
         android:theme="@style/Theme.Falaq"
         tools:targetApi="31">
         <activity
-            android:name=".SecondActivity"
+            android:name=".UpdateActivity"
             android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AddActivity"
+            android:exported="false"
+            android:label="Notes">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".DatabaseActivity"
+            android:exported="false"
+            android:label="Notes">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false"
+            android:label="ActivityWork">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".FirstActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="ActivityWork">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".ResultActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="Calculator">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
