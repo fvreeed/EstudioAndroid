@@ -2,6 +2,7 @@ package com.example.falaq;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,6 +26,7 @@ public class AddActivity extends AppCompatActivity {
             public void onClick(View view) {
                 MyDatabaseHelpers myDatabaseHelpers = new MyDatabaseHelpers(AddActivity.this);
                 myDatabaseHelpers.addNote(title_input.getText().toString(), description_input.getText().toString());
+                finish();
             }
         });
     }

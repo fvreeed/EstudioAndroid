@@ -14,13 +14,16 @@
         tools:targetApi="31">
         <activity
             android:name=".UpdateActivity"
-            android:exported="false">
+            android:parentActivityName=".DatabaseActivity"
+            android:exported="false"
+            android:label="Notes">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".AddActivity"
+            android:parentActivityName=".DatabaseActivity"
             android:exported="false"
             android:label="Notes">
             <meta-data
